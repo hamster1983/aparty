@@ -10,17 +10,13 @@ html, body {
 }
 body {
 	font-family: Geometria, sans-serif;
-}
-.apart-wrap {
-	width: 100vw;
 	min-height: 100vh;
-	border: 1px solid red;
 	padding: 50px 50px 0;
-}
-.apart-wrap-f41 {
-	background-image: url('../img/F-41/f41-fon.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
+}
+body.apart-f41 {
+	background-image: url('../img/F-41/f41-fon.jpg');
 }
 header {
 	display: flex;
@@ -199,7 +195,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	border: 1px solid green;
-	padding-top: 70px;
+	padding-top: 6vh;
 }
 .apart-soc {
 	border: 1px solid blue;
@@ -211,10 +207,10 @@ header {
 	background-color: #fff;
 	width: 2px;
 	height: 50vh;
-	margin-bottom: 20px;
+	margin-bottom: 2vh;
 }
 .apart-soc a {
-	margin-top: 20px;
+	margin-top: 2vh;
 }
 .apart-content {
 	background: rgba(255, 255, 255, 0.6);
@@ -226,6 +222,9 @@ header {
 }
 .apart-slider-wrap {
 	width: 66vh;
+}
+.slick-slide:focus {
+    outline: none;
 }
 .apart-slider-for {
 	border-radius: 15px;
@@ -265,4 +264,199 @@ header {
 }
 .apart-slider-nav .slick-slide:not(.slick-current) {
 	opacity: .4;
+}
+.apart-info {
+	border: 1px solid red;
+	padding-left: 30px;
+	width: 100%;
+}
+.apart-info-head {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 15px;
+}
+.apart-title h1 {
+	margin: 0;
+	font-size: 40px;
+	line-height: 50px;
+}
+.apart-title h2 {
+	margin: 0;
+	font-size: 24px;
+	line-height: 30px;
+}
+.apart-booking button {
+	font-size: 25px;
+	line-height: 40px;
+	background: none;
+	outline: none;
+	border: 1px solid #000;
+	cursor: pointer;
+	padding: 5px 20px;
+}
+.apart-text {
+	width: 100%;
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #000 #747474;
+	height: 50vh;
+}
+.apart-text::-webkit-scrollbar {
+	height: 6px;
+	width: 6px;
+}
+.apart-text::-webkit-scrollbar-track {
+	background: #747474;
+	border-radius: 15px;
+}
+.apart-text::-webkit-scrollbar-thumb {
+	background-color: #000;
+	border-radius: 15px;
+}
+.apart-plan-map {
+	display: flex;
+}
+.apart-plan-map a {
+	display: flex;
+	align-items: center;
+	color: #000;
+	text-decoration: none;
+	font-size: 21px;
+	line-height: 26px;
+	margin-right: 60px;
+}
+.apart-plan-map a img {
+	margin-right: 10px;
+}
+.apart-modal {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+    background-color: rgba(0,0,0,.7);
+}
+.apart-modal.visible {
+	opacity: 1;
+    z-index: 1;
+}
+.apart-plan {
+	position: relative;
+}
+.apart-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+.apart-plan-pic {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.apart-map {
+	width: 100%;
+	max-width: 1200px;
+    height: 70vh;
+    position: relative;
+}
+.apart-map iframe {
+	display: block;
+	height: 70vh;
+	border: none;
+	width: 100%;
+	max-width: 1200px;
+}
+.apart-common {
+	display: flex;
+}
+.apart-common-info {
+	width: 50%;
+	padding-right: 10px;
+}
+.apart-common-info h3 {
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.apart-common-info li {
+	font-size: 16px;
+	line-height: 20px;
+}
+.apart-furniture {
+	display: flex;
+	flex-wrap: wrap;
+}
+.apart-furniture h3 {
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.apart-furniture h4 {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.apart-furniture h4 img {
+	margin-right: 10px;
+}
+.apart-furniture p {
+	margin: 5px 0 0;
+}
+.apart-furniture-bedroom {
+	width: 47%;
+	padding: 0 30px 30px 0;
+}
+.apart-furniture-livingroom {
+	padding-right: 0 10px 30px 0;
+}
+.apart-furniture-kitchen {
+	width: 60%;
+}
+.apart-kitchen-text {
+	column-count: 2;
+}
+.apart-more {
+	position: relative;
+	float: right;
+	padding: 30px 30px 0 0;
+}
+.current-apart {
+	cursor: pointer;
+	font-size: 21px;
+	line-height: 26px;
+}
+.current-apart img {
+	position: relative;
+	top: 8px;
+	left: 3px;
+}
+.another-aparts {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: -1;
+	background: rgba(255, 255, 255, 0.56);
+	padding: 5px 10px;
+	width: 100%;
+}
+.another-aparts a {
+	font-size: 21px;
+	line-height: 26px;
+	text-decoration: none;
+	color: #000;
+}
+.another-aparts a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.another-aparts.active {
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(70%);
 }

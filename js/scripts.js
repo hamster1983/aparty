@@ -25,4 +25,23 @@ $(document).ready(function(){
     focusOnSelect: true
   });
 
+  //plan & map modal
+  $('.apart-plan-btn').on('click',function(e){
+    e.preventDefault();
+    let src = $(this).attr('data-plan');
+    $('.apart-plan-pic').attr('src',src);
+    $('.apart-plan-modal').addClass('visible');
+  });
+  $('.apart-map-btn').on('click',function(e){
+    e.preventDefault();
+    $('.apart-map-modal').addClass('visible');
+  });
+  $('.apart-close').on('click',function(){
+    $('.apart-modal').removeClass('visible');
+  });
+
+  $('.current-apart').on('click',function(){
+    $(this).next('.another-aparts').toggleClass('active');
+  });
+
 });
