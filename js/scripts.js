@@ -22,7 +22,15 @@ $(document).ready(function(){
     asNavFor: '.apart-slider-for',
     dots: false,
     arrows: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4
+        }
+      }
+    ]
   });
 
   //plan & map modal
