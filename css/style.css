@@ -10,10 +10,25 @@ html, body {
 }
 body {
 	font-family: Geometria, sans-serif;
-	min-height: 100vh;
+	height: 100vh;
 	padding: 50px 50px 0;
 	background-size: cover;
 	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+body:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.4);
+}
+body.apart-index {
+	background-image: url('../img/main-fon.jpg');
 }
 body.apart-f41 {
 	background-image: url('../img/F-41/f41-fon.jpg');
@@ -129,11 +144,12 @@ header {
 		padding-top: 20px;
 		left: 0;
 		opacity: 0;
-		z-index: -1px;
+		z-index: -1;
 		transition: .2s;
 	}
 	.apart-nav.visible {
 		opacity: 1;
+		z-index: 1;
 	}
 }
 @media (max-width: 700px) {
@@ -156,7 +172,7 @@ header {
 }
 @media (max-width: 600px) {
 	body {
-		padding: 0 15px;
+		padding: 10px 15px 0;
 	}
 	.ns-logo {
 		width: 180px;
@@ -195,6 +211,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 6vh;
+	position: relative;
 }
 .apart-soc {
 	display: flex;
@@ -210,6 +227,30 @@ header {
 .apart-soc a {
 	margin-top: 2vh;
 }
+
+/* content index page */
+.index-content {
+	width: 95%;
+	border: 1px solid red;
+}
+.index-content h1 {
+	font-size: 80px;
+	margin-top: 30px;
+	color: #fff;
+	font-weight: 100;
+}
+.index-text-slider {
+	border: 1px solid orange;
+}
+.index-text {
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 500;
+	color: #fff;
+	max-width: 560px;
+}
+
+/* content apart's page */
 .apart-content {
 	background: rgba(255, 255, 255, 0.6);
 	backdrop-filter: blur(10px);
@@ -547,6 +588,13 @@ header {
 	}
 }
 @media (max-width: 1200px) {
+	.apart-main {
+		padding-top: 30px;
+		transition: .2s;
+	}
+	.apart-main.offset {
+		transform: translateY(50px);
+	}
 	.apart-title h1 {
 		font-size: 28px;
 		line-height: 36px;
@@ -574,7 +622,6 @@ header {
 @media (max-width: 1000px) {
 	.apart-main {
 		flex-wrap: wrap;
-		padding-top: 60px;
 	}
 	.apart-content {
 		width: 100%;
@@ -629,10 +676,18 @@ header {
 		margin: 10px -1vw 0;
 	}
 }
+@media (max-width: 700px) {
+	.apart-main.offset {
+		transform: translateY(30px);
+	}
+}
 @media (max-width: 600px) {
 	.apart-main {
-		padding-top: 50px;
+		padding-top: 10px;
 		margin: 0 -15px;
+	}
+	.apart-main.offset {
+		transform: translateY(50px);
 	}
 	.apart-slider-nav [class^="apart-slide"] {
 		width: 21vw;
@@ -643,5 +698,8 @@ header {
 	.apart-slider-nav [class^="apart-slide"] {
 		width: 19vw;
 		height: 19vw;
+	}
+	.apart-main.offset {
+		transform: translateY(100px);
 	}
 }

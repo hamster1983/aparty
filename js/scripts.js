@@ -4,8 +4,10 @@ $(document).ready(function(){
     $(this).next('.change-lang').toggleClass('active');
   });
 
+
   $('.navbar-toggler').on('click',function(){
     $(this).next('.apart-nav').toggleClass('visible');
+    $('.apart-main').toggleClass('offset');
   });
 
   $('.apart-slider-for').slick({
