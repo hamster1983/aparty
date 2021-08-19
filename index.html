@@ -11,10 +11,12 @@
 	<meta property="og:title" content="">
  	<meta property="og:description" content="">
 	<meta property="og:image" content="">
-	<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<link href="img/favicon.svg" rel="shortcut icon" type="image/x-icon" />
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/slick.css" rel="stylesheet" type="text/css">
     <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body class="apart-index">
@@ -38,9 +40,9 @@
 		<nav class="navbar-top">
 			<div class="navbar-toggler" role="button"><span></span></div>
 			<ul class="apart-nav">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">О проекте</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#" class="active"><span>Главная</span></a></li>
+				<li><a href="#"><span>О проекте</span></a></li>
+				<li><a href="#"><span>Контакты</span></a></li>
 			</ul>
 		</nav>
 		<ul class="lang">
@@ -61,129 +63,74 @@
 			<a href="#"><img src="img/zen.png" alt=""></a>
 			<a href="#"><img src="img/yt.png" alt=""></a>
 		</div>
-		<!--<div class="apart-content">
-			<div class="apart-slider-wrap">
-				<div class="apart-slider apart-slider-for">
-					<div class="apart-slide-1"></div>
-					<div class="apart-slide-2"></div>
-					<div class="apart-slide-3"></div>
-					<div class="apart-slide-4"></div>
-					<div class="apart-slide-5"></div>
-				</div>
-				<div class="apart-slider apart-slider-nav">
-					<div>
-						<div class="apart-slide-1"></div>
-					</div>
-					<div>
-						<div class="apart-slide-2"></div>
-					</div>
-					<div>
-						<div class="apart-slide-3"></div>
-					</div>
-					<div>
-						<div class="apart-slide-4"></div>
-					</div>
-					<div>
-						<div class="apart-slide-5"></div>
-					</div>
-				</div>
-			</div>
-			<div class="apart-info">
-				<div class="apart-info-head">
-					<div class="apart-title">
-						<h1>Le Monte-Carlo (F41)</h1>
-						<h2>Видовые меблированные апартаменты</h2>
-					</div>
-					<div class="apart-booking">
-						<button class="apart-booking">Забронировать</button>
-					</div>
-				</div>
-				<div class="apart-text">
-					<div class="apart-plan-map">
-						<a href="#" class="apart-plan-btn" data-plan="img/F-41/f41-plan.png"><img src="img/plan.png" alt="">План апартаментов</a>
-						<a href="#" class="apart-map-btn"><img src="img/map.png" alt="">Показать на карте</a>
-						<a href="#"><img src="img/360.png" alt="" class="apart-360"></a>
-					</div>
-					<div class="apart-common">
-						<div class="apart-common-info">
-							<h3>Общая информация</h3>
-							<ul>
-								<li>общая площадь: 227 м<sup>2</sup></li>
-								<li>жилая площадь: 171 м<sup>2</sup></li>
-								<li>площадь террас и балконов: 26 м<sup>2</sup></li>
-								<li>площадь гардеробных: 30 м<sup>2</sup></li>
-								<li>1 парковочное место в подземном паркинге</li>
-								<li>прямой вид на море</li>
-								<li>4-й этаж, есть лифт</li>
-								<li>центральное отопление</li>
-								<li>кондиционеры в жилых комнатах</li>
-							</ul>	
-						</div>
-						<div class="apart-common-info">
-							<h3>Состав апартаментов</h3>
-							<ul>
-								<li>прихожая, кухня, гостиная</li>
-								<li>3 спальни (оборудованные спальные места для 6-ти человек)</li>
-								<li>3 совмещенных санузла, 1 гостевой туалет
-								<li>меблированные терраса и балкон</li>
-							</ul>
-						</div>
-					</div>
-					<div class="apart-furniture">
-						<h3>Оборудование и мебель</h3>
-						<div class="apart-furniture-bedroom">
-							<h4><img src="img/bed.png" alt=""> Спальные комнаты:</h4>
-							<p>Спальня 1: двуспальная кровать</p>
-							<p>Спальня 2: две односпальные кровати</p>
-							<p>Спальня 3: двуспальная кровать</p>
-							<p>По запросу предоставляется детская кроватка для ребенка до 2-х лет</p>
-						</div>
-						<div class="apart-furniture-livingroom">
-							<h4><img src="img/gostinaya.png" alt=""> Гостиная:</h4>
-							<p>Плазменная телевизионная панель</p>
-							<p>Мягкий салон</p>
-							<p>Обеденный стол</p>
-						</div>
-						<div class="apart-furniture-kitchen">
-							<h4><img src="img/kitchen.png" alt=""> Кухня:</h4>
-							<div class="apart-kitchen-text">
-								<p>Варочная панель</p>
-								<p>Духовка</p>
-								<p>Вытяжка</p>
-								<p>Микроволновая печь</p>
-								<p>Холодильник</p>
-								<p>Посудомоечная машина</p>
-								<p>Стиральная машина</p>
-								<p>Обеденный стол</p>
-								<p>Полный комплект посуды для приготовления еды</p>
-								<p>Полный комплект посуды для сервировки</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="apart-more">
-					<div class="current-apart" role="button">Смотреть другие апартаменты&nbsp;<img src="img/arrow-down.png" alt=""></div>
-					<div class="another-aparts">
-						<a href="#">Le Monte-Carlo (F51)</a><br>
-						<a href="#">Le Monte-Carlo (F71)</a><br>
-						<a href="#">Le Monte-Carlo (D46)</a>
-					</div>
-				</div>
-			</div>
-		</div>-->
 		<div class="index-content">
 			<h1>АПАРТАМЕНТЫ ОТ НОВОСТАР</h1>
 			<div class="index-text-slider">
 				<div class="index-text">
 					Апартаменты находятся в огороженной и охраняемой резиденции, работают камеры видеонаблюдения. К услугам резидентов парковочные места на подземном паркинге. Здание находится на главной туристической улице и одновременно на первой береговой линии. Резиденция имеет П-образную архитектуру, во внутреннем дворе расположен бассейн, примыкающий к оборудованному пляжу.
 				</div>
+				<div class="index-slider owl-carousel">
+					<div class="carousel-item item-d46">
+						<a href="#" class="carousel-apart-thumb"></a>
+						<h2>Le Monte-Carlo (D46)</h2>
+						<p class="carousel-item-subtitle">Видовые меблированные апартаменты</p>
+						<div class="carousel-item-info">
+							<a href="#" target="_blank"><img src="img/360.png" alt=""></a>
+							Общая площадь: 162 м<sup>2</sup><br>
+							Жилая площадь: 125 м<sup>2</sup><br>
+							Количество гостей: 5-6<br>
+							Количество спален: 3
+						</div>
+						<a href="#" class="carousel-arapt-detail">Подробнее</a>
+					</div>
+					<div class="carousel-item item-f41">
+						<a href="#" class="carousel-apart-thumb"></a>
+						<h2>Le Monte-Carlo (F41)</h2>
+						<p class="carousel-item-subtitle">Видовые меблированные апартаменты</p>
+						<div class="carousel-item-info">
+							<a href="#" target="_blank"><img src="img/360.png" alt=""></a>
+							Общая площадь: 227 м<sup>2</sup><br>
+							Жилая площадь: 171 м<sup>2</sup><br>
+							Количество гостей: 6-7<br>
+							Количество спален: 3
+						</div>
+						<a href="#" class="carousel-arapt-detail">Подробнее</a>
+					</div>
+					<div class="carousel-item item-f51">
+						<a href="#" class="carousel-apart-thumb"></a>
+						<h2>Le Monte-Carlo (F51)</h2>
+						<p class="carousel-item-subtitle">Видовые меблированные апартаменты</p>
+						<div class="carousel-item-info">
+							<a href="#" target="_blank"><img src="img/360.png" alt=""></a>
+							Общая площадь: 222 м<sup>2</sup><br>
+							Жилая площадь: 165 м<sup>2</sup><br>
+							Количество гостей: 6-7<br>
+							Количество спален: 3
+						</div>
+						<a href="#" class="carousel-arapt-detail">Подробнее</a>
+					</div>
+					<div class="carousel-item item-f71">
+						<a href="#" class="carousel-apart-thumb"></a>
+						<h2>Le Monte-Carlo (F71)</h2>
+						<p class="carousel-item-subtitle">Видовые меблированные апартаменты с пентхаусом</p>
+						<div class="carousel-item-info">
+							<a href="#" target="_blank"><img src="img/360.png" alt=""></a>
+							Общая площадь: 315 м<sup>2</sup><br>
+							Жилая площадь: 200 м<sup>2</sup><br>
+							Площадь пентхауса: 204 м<sup>2</sup><br>
+							Количество гостей: 6-7<br>
+							Количество спален: 3
+						</div>
+						<a href="#" class="carousel-arapt-detail">Подробнее</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-
 	<script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
