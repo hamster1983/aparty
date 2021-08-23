@@ -54,20 +54,20 @@ $(document).ready(function(){
     $(this).next('.another-aparts').toggleClass('active');
   });
 
-  //slider on index page
-  $('.index-slider').owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    autoplayTimeout: 3500,
-    smartSpeed: 1500,
-    items: 4,
-    dotsEach: 1,
-    nav: true,
-    navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"]
-  });
-
-  console.log($(document).outerHeight());
+  if($('.owl-carousel').length) {
+    //slider on index page
+    $('.index-slider').owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      autoplayTimeout: 3500,
+      smartSpeed: 1500,
+      items: 4,
+      dotsEach: 1,
+      nav: true,
+      navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"]
+    });
+  }
   
   //$('.index-slider').on('changed.owl.carousel', function(event) {
     //event
